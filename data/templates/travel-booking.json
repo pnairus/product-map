@@ -1,0 +1,26 @@
+{
+  "id": "travel-booking",
+  "name": "Travel Booking",
+  "description": "Corporate traveler booking flow with policy compliance.",
+  "stages": [
+    "Realize Need",
+    "Search Options",
+    "Compare Options",
+    "Book Hotel",
+    "Complete Trip"
+  ],
+  "rows": [
+    { "name": "User Goal", "type": "goal" },
+    { "name": "Jobs to be Done", "type": "job" },
+    { "name": "Pain Points", "type": "pain" },
+    { "name": "Opportunities", "type": "opportunity" },
+    { "name": "Solutions", "type": "solution" }
+  ],
+  "cells": [
+    { "stage": "Realize Need", "row": "User Goal", "content": "Confirm trip purpose, dates, and budget." },
+    { "stage": "Search Options", "row": "Jobs to be Done", "content": "Find policy-compliant hotels quickly." },
+    { "stage": "Compare Options", "row": "Pain Points", "content": "Too many options with unclear policy rules." },
+    { "stage": "Book Hotel", "row": "Opportunities", "content": "Highlight approved rates and one-click booking." },
+    { "stage": "Complete Trip", "row": "Solutions", "content": "Provide receipt capture and expense integration." }
+  ]
+}

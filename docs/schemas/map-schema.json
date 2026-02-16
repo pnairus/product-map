@@ -1,0 +1,164 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Product Map Schema",
+    "type": "object",
+    "definitions": {
+        "Map": {
+            "type": "object",
+            "required": [
+                "id",
+                "name",
+                "stages",
+                "rows",
+                "cells"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for the map"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the map"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "persona": {
+                    "$ref": "#/definitions/Persona"
+                },
+                "stages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Stage"
+                    }
+                },
+                "rows": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Row"
+                    }
+                },
+                "cells": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Cell"
+                    }
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "Stage": {
+            "type": "object",
+            "required": [
+                "id",
+                "name",
+                "order"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "order": {
+                    "type": "number"
+                }
+            }
+        },
+        "Row": {
+            "type": "object",
+            "required": [
+                "id",
+                "name",
+                "type",
+                "order"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "goal",
+                        "job",
+                        "action",
+                        "pain",
+                        "opportunity",
+                        "solution",
+                        "emotion",
+                        "touchpoint",
+                        "metric",
+                        "custom"
+                    ]
+                },
+                "order": {
+                    "type": "number"
+                }
+            }
+        },
+        "Cell": {
+            "type": "object",
+            "required": [
+                "id",
+                "stage_id",
+                "row_id",
+                "content"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "stage_id": {
+                    "type": "string"
+                },
+                "row_id": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "Persona": {
+            "type": "object",
+            "required": [
+                "id",
+                "name"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "goals": {
+                    "type": "string"
+                },
+                "frustrations": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "default",
+  "name": "Blank (Default)",
+  "description": "Core stages and rows for a general product journey.",
+  "stages": [
+    "Realize Need",
+    "Search Options",
+    "Compare Options",
+    "Decide",
+    "Use"
+  ],
+  "rows": [
+    { "name": "User Goal", "type": "goal" },
+    { "name": "Jobs to be Done", "type": "job" },
+    { "name": "Pain Points", "type": "pain" },
+    { "name": "Opportunities", "type": "opportunity" },
+    { "name": "Solutions", "type": "solution" }
+  ],
+  "cells": []
+}

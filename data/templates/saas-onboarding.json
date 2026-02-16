@@ -1,0 +1,26 @@
+{
+  "id": "saas-onboarding",
+  "name": "SaaS Onboarding",
+  "description": "First-time user setup and activation flow.",
+  "stages": [
+    "Sign Up",
+    "Initial Setup",
+    "First Value",
+    "Adopt Workflow",
+    "Retain"
+  ],
+  "rows": [
+    { "name": "User Goal", "type": "goal" },
+    { "name": "Jobs to be Done", "type": "job" },
+    { "name": "Pain Points", "type": "pain" },
+    { "name": "Opportunities", "type": "opportunity" },
+    { "name": "Solutions", "type": "solution" }
+  ],
+  "cells": [
+    { "stage": "Sign Up", "row": "Pain Points", "content": "Confusing sign-up requirements." },
+    { "stage": "Initial Setup", "row": "Jobs to be Done", "content": "Configure workspace quickly." },
+    { "stage": "First Value", "row": "User Goal", "content": "See benefit in first session." },
+    { "stage": "Adopt Workflow", "row": "Opportunities", "content": "Provide guided checklists and tips." },
+    { "stage": "Retain", "row": "Solutions", "content": "Send progress nudges and success metrics." }
+  ]
+}

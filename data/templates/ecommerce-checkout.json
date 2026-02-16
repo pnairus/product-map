@@ -1,0 +1,26 @@
+{
+  "id": "ecommerce-checkout",
+  "name": "E-commerce Checkout",
+  "description": "Customer journey from cart to order confirmation.",
+  "stages": [
+    "Review Cart",
+    "Enter Details",
+    "Choose Payment",
+    "Place Order",
+    "Track Delivery"
+  ],
+  "rows": [
+    { "name": "User Goal", "type": "goal" },
+    { "name": "Jobs to be Done", "type": "job" },
+    { "name": "Pain Points", "type": "pain" },
+    { "name": "Opportunities", "type": "opportunity" },
+    { "name": "Solutions", "type": "solution" }
+  ],
+  "cells": [
+    { "stage": "Review Cart", "row": "User Goal", "content": "Confirm items and total cost quickly." },
+    { "stage": "Enter Details", "row": "Pain Points", "content": "Long forms and unclear shipping options." },
+    { "stage": "Choose Payment", "row": "Opportunities", "content": "Offer fast wallet payments and BNPL." },
+    { "stage": "Place Order", "row": "Jobs to be Done", "content": "Complete purchase with confidence." },
+    { "stage": "Track Delivery", "row": "Solutions", "content": "Provide proactive shipment updates." }
+  ]
+}

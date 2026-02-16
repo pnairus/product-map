@@ -1,0 +1,26 @@
+{
+  "id": "b2b-procurement",
+  "name": "B2B Procurement",
+  "description": "Enterprise buying workflow from request to approval.",
+  "stages": [
+    "Identify Need",
+    "Request Vendor",
+    "Evaluate Options",
+    "Approve Purchase",
+    "Onboard Vendor"
+  ],
+  "rows": [
+    { "name": "User Goal", "type": "goal" },
+    { "name": "Jobs to be Done", "type": "job" },
+    { "name": "Pain Points", "type": "pain" },
+    { "name": "Opportunities", "type": "opportunity" },
+    { "name": "Solutions", "type": "solution" }
+  ],
+  "cells": [
+    { "stage": "Identify Need", "row": "User Goal", "content": "Clarify requirements and budget." },
+    { "stage": "Request Vendor", "row": "Pain Points", "content": "Slow intake and unclear approval steps." },
+    { "stage": "Evaluate Options", "row": "Jobs to be Done", "content": "Compare vendors on compliance and cost." },
+    { "stage": "Approve Purchase", "row": "Opportunities", "content": "Streamline approvals with auto-routing." },
+    { "stage": "Onboard Vendor", "row": "Solutions", "content": "Automate onboarding checklists and docs." }
+  ]
+}
